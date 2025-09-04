@@ -1,5 +1,5 @@
-\# Reverse Engineering
+\# How to select a Single Board Computer(SBC) to cater different tasks.
 
 
-This article explains a very useful skill widely famous in Hardware (even software) engineering that lets you dig deep into the design strategy of various hardware products. It's a technique used secretly (no Chinese were hurt here) in many companies to crack down the hardware made by competitors to look for possibilities of reducing design complexity, production time and cost and sometimes even finding clone components.
+you might be aware about Raspberry-Pi and might have seen many projects based on it. The raspberry pi is nothing but a SBC or a Single Board computer, called so because they generally can perform all tasks a normal PC can but with it's main board being small sized, usually something which fits in your palm. They are used in variety of hobbyist and educational tasks like inferencing, a small NAS, IoT Products and so on.
 
