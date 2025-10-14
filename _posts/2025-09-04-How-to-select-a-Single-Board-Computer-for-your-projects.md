@@ -1,4 +1,4 @@
-\# How to select a Single Board Computer (SBC) to cater your needs.
+\#How to select a Single Board Computer (SBC) to cater your needs.
 
 
 
