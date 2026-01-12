@@ -1,24 +1,24 @@
-A single board computer, As the name suggests, is a computing unit that's fitted into a single circuit board, very often we call these circuit boards as printed circuit board (PCB). They are used in a variety of applications like drone, robotics, automotives and edge computing. These boards cater everything that is commonly expected from a regular computer but, in a small, streamlined design.
+A single board computer, As the name suggests, is a computing unit that's fitted into a circuit board, very often we call these circuit boards as printed circuit board (PCB). They are used in a variety of applications like drone, robotics, automotives and edge computing. These boards cater everything that is commonly expected from a regular computer but, in a small and streamlined design.
 
 
 
-There are other siblings to single board computers as well, called SoM ( system on module). A SoM has everything a SBC has (processor, main memory, power and DRAM) except peripherals. The reason is modular connectivity to different carrier boards serving different peripherals. The other sibling is a mini pc. A mini pc is a type of SBC which provides you with a desktop PC experience in a small size and with similar computing power.
+There are other siblings to single board computers as well, called System on Module (SoM). A SoM has everything a SBC has (processor, main memory, power and DRAM) except the peripherals. The reason is modular connectivity to different carrier boards having different peripherals to serve different applications. The other sibling is a mini PC. A mini PC is a type of SBC which provides you with a desktop PC experience in a small size and with similar computing power.
 
 
 
-Now, coming to our main discussion topic on how to select an SBC. To keep this guide sweet and simple, let us first see the different components that a SBC is usually composed of:
+Now, coming to our main topic of discussion on how to select a SBC for your application. To keep this guide sweet and simple, let us first see the different components that a SBC is usually composed of:
 
 
 
-The Processor: A processor is the most important part of your computer; it's the brain that efficiently handles your computing tasks to give you unparalleled results. A processor is selected based on several factors, but the most basic are its performance capabilities, clock frequency, data handling capabilities and available OS support. Most of these factors are listed in the benchmark scores of your respective processor. A basic comparison for the sake of understanding can be the immediate suffixes on the part ID of processors, which go into your laptops, usually ending with letters like U, H, P, etc., indicating their computing capabilities and power consumption. Similarly, for SBCs, you can see stats like cores and their architecture, threads, clock speed, maximum allowed memory, storage bandwidth and their respective data/transfer speed, number of peripheral ports.
+The Processor: A processor is the most important part of your computer; it's the brain that efficiently handles your computing tasks to give you unparalleled results. A processor is selected based on several factors, but the most basic are its performance capabilities, clock frequency, data handling capabilities and available OS support. Most of these factors are listed in the benchmark scores of your respective processor. You can select your SBC based on the processor it has using these CPU benchmark scores. You can see stats like CPU cores and their architecture, clock speed, maximum allowed memory, storage bandwidth and their respective data/transfer speed, number of peripheral ports.
 
 
 
-The RAM: The RAM is an accelerator for your SBC. It helps in moving data at high speed for a short span of time. It usually helps your processor and storage to process heavy data at high speeds by storing data for a small time, giving the processor a fast read/write speed. Your RAM is the reason your games, browser, and music apps run smoothly. Your usual selection criteria for RAM consist of version, the voltage they work on, their transfer speed, and latency. DDR4, DDR5, DDR5L, LPDDR4/4X, LPDDR5/5X are some good examples.
+The RAM: The RAM is an accelerator for your SBC. It stores data from storage device for running applications for short period of time and provide this data to the CPU when needed. It helps your processor and storage to process heavy data at high speeds by storing data for a small time, giving the processor a fast read/write speed. Your RAM is the reason your games, browser, and music apps run smoothly. Your usual selection criteria for RAM consist of version, the voltage they work on, their transfer speed, and latency. DDR4, DDR5, DDR5L, LPDDR4/4X, LPDDR5/5X are some good examples.
 
 
 
-Main Memory: The main memory is your non-volatile memory, which retains your data even after the power supply is cut. SSD, Flash Memories, HDD, and UFS are some good examples of main memories. Typically, you would want a large data storage memory for your application, but apart from size, you might also want to see replaceability, the interface it uses for communication, and its speed.
+Storage: The storage is the you non-volatile memory which retains data even after the power supply is cut. SSD, Flash, and UFS are some good examples of storage devices. Typically, you might want larger storage options for your application, so it generally a better idea to select a SBC which has larger storage inherently and even allows options to expand storage. Most SBCs do so by providing a NVMe port or SATA port to connect with th
 
 
 
