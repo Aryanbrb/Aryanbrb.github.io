@@ -1,4 +1,4 @@
-You might be aware of devices like Raspberry Pi and Beaglebone; these devices are categorised into single board computers, characterised by their small size but heavy computing power compared to a regular desktop pc (sometimes even greater). They are used in a variety of applications like NAS, edge computing, and mini pc. These boards cater to all your needs, you expect from a desktop pc, that too in a small size.
+A single board computer, As the name suggests, is a computing unit that's fitted into a single circuit board, very often we call these circuit boards as printed circuit board (PCB). They are used in a variety of applications like drone, robotics, automotives and edge computing. These boards cater everything that is commonly expected from a regular computer but, in a small, streamlined design.
 
 
 
