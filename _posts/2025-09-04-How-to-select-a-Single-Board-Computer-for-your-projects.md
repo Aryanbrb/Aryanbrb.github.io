@@ -1,4 +1,4 @@
-A Single-Board Computer, or SBC, refers to a computer that has a microprocessor, memory, as well as all input/output peripherals, all of which are embedded on a single PCB, or Printed Circuit Board. This means that, unlike traditional PCs, wherein you replace components such as RAM or a GPU, the SBC computer functions as an 'all-in-one' computer with soldered components designed for particular functions like robotics, automotive, or edge computing.
+A Single-Board Computer, or SBC, refers to a computer that has a microprocessor, memory, as well as all input/output peripherals, all of which are embedded on a single PCB, or Printed Circuit Board. This means that, unlike traditional PCs, wherein you replace components such as RAM or a GPU, the SBC computer functions as an 'all-in-one' computer with soldered components designed for functions like robotics, automotive, or edge computing.
 
 ## **SBC Family Tree: SoM's and Mini PCs**
 
@@ -12,25 +12,25 @@ Mini PC: Often confused with a traditional SBC, but a Mini PC is essentially a b
 Now, coming to our main topic of discussion on how to select a SBC for your application. To keep this guide sweet and simple, let us first see the different components that a SBC is usually composed of:
 
 
-### **1. The Processor: The orchestra conductor**
+### **1. Processor: The orchestra conductor**
 
-The processor is the actual brain of your computer. This part carries out almost all the operations you need to perform in your SBC hence, becomes the most important factor for selecting a SBC. The criteria to select a processor is based upon its hardware and software properties namely Architecture, ISA, Cores and many more. Usually a better number or core is many times related with higher performance but that's not it. That is where architecture steps in.
+The processor is the actual brain of your computer. This part carries out almost all the operations you need to perform in your SBC and hence, becomes the most important factor for selecting a SBC. The criteria to select a processor is based upon its hardware and software properties namely Architecture, ISA, Cores and many more. Usually a higher number or core is many times related with higher performance but that's not it. That is where architecture steps in.
 
-Architecture: When selecting, always aim for at least ARMv8 (which supports 64-bit computing) or higher, in order to support software such as Docker or Tensorflow. A modern lower core CPU can any time beat a slower high core CPU with old or inefficient architecture. 
+Architecture: When selecting, always aim for at least ARMv8 (which supports 64-bit computing) or higher, in order to support software such as Docker or Tensorflow. A modern lower-core CPU can any time beat a high core CPU with old or inefficient architecture. 
 
-To remove confusion and digging more deeper into CPU and its architecture you can conveniently rely on Benchmarks, look at actual benchmark results for IPC performance as well as the ability of the chip to support the flow of data between the CPU and memory.
+To remove confusion and prevent you from digging more deep into CPU and its architecture, you can conveniently rely on Benchmarks. Look at actual benchmark results for IPC performance as well as the ability of the chip to support the flow of data between the CPU and memory.
 
 ### **2. RAM: Your Computer’s Workspace**
 
-For example, think about your RAM in terms of your work “desk”. If your work “desk” is too small, your “CPU” has to work too hard, which slows it down.
+For example, think about your RAM in terms of your work desk. If your work desk is too small, your CPU has to work too hard, which slows it down.
 
-Selection Criteria: For “Headless” servers, which lack the monitor, 1GB–2GB is adequate whereas Desktop or AI applications require at least 4GB. But make sure to check for standrds (LPDDR4X or LPDDR5 standards). DRAM of higher standards provide faster speeds and lower latency, which is necessary for applications that utilise memory heavily, such as video processing.
+Selection Criteria: For “Headless” servers, which lack the monitor, 1GB–2GB is adequate whereas Desktop or AI applications require at least 4GB. But make sure to check for standrds (DDR5, LPDDR4(X), LPDDR5(X), etc). DRAM of higher standards provide faster speeds and lower latency, which is necessary for applications that utilise memory heavily, such as video processing.
 
 
 
 ### **3. Storage:**
 
-The storage is the you non-volatile memory which retains data even after the power supply is cut. SDCard, eMMC, SSD, and UFS are some good examples of storage devices. Typically, you might want larger storage options for your application, so it is generally a better idea to select a SBC which has larger storage inherently and even allows options to expand storage. Apart from storage size you also look for standards and their generations, While MicroSD cards are convenient for beginners, they are a major point of failure due to limited "Write Endurance".If your project logs a lot of data, prioritize boards with eMMC (embedded Multi-Media Card) or NVMe/SSD support. These are significantly faster and won't "wear out" and corrupt your OS as easily as an SD card. Most SBCs do so by providing a NVMe port or SATA port to connect with the external hard drives and pre-soldered eMMC.
+The storage is the your non-volatile memory which retains data even after the power supply is cut. SDCard, eMMC, SSD, and UFS are some good examples of storage devices. Typically, you might want larger storage options for your application, so it is generally a better idea to select a SBC which has larger storage inherently and even allows options to expand storage. Apart from storage size you also look for standards and their generations, While MicroSD cards are convenient for beginners, they are a major point of failure due to limited "Write Endurance". If your project logs a lot of data, prioritize boards with eMMC (embedded Multi-Media Card) or NVMe/SSD support. These are significantly faster and won't "wear out" and corrupt your OS as easily as an SD card. Most SBCs do so by providing a NVMe port or SATA port to connect with the external hard drives and pre-soldered eMMC.
 
 
 
@@ -48,7 +48,7 @@ Low Speed I/O: On the low-speed I/O, common interfaces include I2C, UART, SPI, a
 
 High-Speed I/O: Having a PCIe interface is a HUGE plus. This enables you to connect higher-speed NVMe storage solutions or even AI accelerators.
 
-Ecosystem. Verify that the manufacturer has support for HAT (Hardware Attached on Top) or shield adapters. This indicates that the community has a thriving market for add-ons, which is a good thing because you won't have to make your own custom boards.
+Ecosystem: Verify that the manufacturer has support for HAT (Hardware Attached on Top) or shield adapters. This indicates that the community has a thriving market for add-ons, which is a good thing because you won't have to make your own custom boards.
 
 ### **6. Power and Cooling Solutions**
 
