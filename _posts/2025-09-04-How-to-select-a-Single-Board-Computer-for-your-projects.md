@@ -1,45 +1,70 @@
-A single board computer, As the name suggests, is a computing unit that's fitted into a circuit board, very often we call these circuit boards as printed circuit board (PCB). They are used in a variety of applications like drone, robotics, automotives and edge computing. These boards cater everything that is commonly expected from a regular computer but, in a small and streamlined design.
+A Single-Board Computer, or SBC, refers to a computer that has a microprocessor, memory, as well as all input/output peripherals, all of which are embedded on a single PCB, or Printed Circuit Board. This means that, unlike traditional PCs, wherein you replace components such as RAM or a GPU, the SBC computer functions as an 'all-in-one' computer with soldered components designed for particular functions like robotics, automotive, or edge computing.
 
+## **SBC Family Tree: SoM's and Mini PCs**
 
+Before purchasing, you should check if you are perhaps seeking one of its ‘siblings’:
 
-There are other siblings to single board computers as well, called System on Module (SoM). A SoM has everything a SBC has (processor, storage, power management and DRAM) except the peripherals. The reason is modular connectivity to different carrier boards having different peripherals to serve different applications. The other sibling is a mini PC. A mini PC is a type of SBC which provides you with a desktop PC experience in a small size and with similar computing power.
+System on Module (SoM): This module has the CPU, the RAM, and the Power Management (PMIC), but does not have peripheral interfaces such as HDMI or USB. It is placed on a Carrier Board that is designed for a certain use in the industrial sector. 
 
+Mini PC: Often confused with a traditional SBC, but a Mini PC is essentially a boxed computer often having user-replaceable parts (e.g., SODIMM RAM). Go here if you don't need hardware-level interfacing to a sensor but raw desktop computer power instead.
 
 
 Now, coming to our main topic of discussion on how to select a SBC for your application. To keep this guide sweet and simple, let us first see the different components that a SBC is usually composed of:
 
 
+### **1. The Processor: The orchestra conductor**
 
-The Processor: A processor is the most important part of your computer; it's the brain that efficiently handles your computing tasks to give you unparalleled results. A processor is selected based on several factors, but the most basic are its performance capabilities, clock frequency, data handling capabilities and available OS support. One more factor that many people select their SBC is based on the number of cores in their processor, howver only cores do not matter but architecture too so make sure to carry out a thorough comparison on that too. Most of these factors are listed in the benchmark scores of your respective processor. You can select your SBC based on the processor it has using these CPU benchmark scores. You can see stats like CPU cores and their architecture, clock speed, maximum allowed memory, storage bandwidth and their respective data/transfer speed, number of peripheral ports.
+The processor is the actual brain of your computer. This part carries out almost all the operations you need to perform in your SBC hence, becomes the most important factor for selecting a SBC. The criteria to select a processor is based upon its hardware and software properties namely Architecture, ISA, Cores and many more. Usually a better number or core is many times related with higher performance but that's not it. That is where architecture steps in.
 
+Architecture: When selecting, always aim for at least ARMv8 (which supports 64-bit computing) or higher, in order to support software such as Docker or Tensorflow. A modern lower core CPU can any time beat a slower high core CPU with old or inefficient architecture. 
 
+To remove confusion and digging more deeper into CPU and its architecture you can conveniently rely on Benchmarks, look at actual benchmark results for IPC performance as well as the ability of the chip to support the flow of data between the CPU and memory.
 
-The RAM: The RAM is an accelerator for your SBC. It stores data from storage device for running applications for short period of time and provide this data to the CPU when needed. It acts as a high-speed "workspace" so the CPU doesn't have to wait for the slow storage, giving the processor a fast read/write speed. Your RAM is the reason your games, browser, and music apps run smoothly. Your usual selection criteria for RAM consist of version, the voltage they work on, their transfer speed, and latency. DDR4, DDR5, LPDDR4/4X, LPDDR5/5X are some good examples.
+### **2. RAM: Your Computer’s Workspace**
 
+For example, think about your RAM in terms of your work “desk”. If your work “desk” is too small, your “CPU” has to work too hard, which slows it down.
 
-
-Storage: The storage is the you non-volatile memory which retains data even after the power supply is cut. SDCard, eMMC, SSD, and UFS are some good examples of storage devices. Typically, you might want larger storage options for your application, so it is generally a better idea to select a SBC which has larger storage inherently and even allows options to expand storage. Most SBCs do so by providing a NVMe port or SATA port to connect with the external hard drives.
-
-
-
-Networks: The number of networking options enables you not only to use the internet but also enables you to access your board from a distance without physically being near to it. A single board computer should ideally have Ethernet ( 1000 Mbps/1 Gbps/ 2.5 Gbps or greater), Wi-fi ( 5/6/6E or even better, 7!), Bluetooth (5.0 and greater)
-
-
-
-Peripherals: Your application might want you to access input and output devices, or some interfaces for configuration and debugging or a typical sensor interfacing. Some good-to-go interfaces are I2C, UART, USB, SPI, JTAG, and I2S ( some boards also provide an on-board audio jack to access a digital audio interface). If your board provides an external PCIe interface to allow you to attach external NVMe SSDs or perform some expansion, it's a serious green flag!
+Selection Criteria: For “Headless” servers, which lack the monitor, 1GB–2GB is adequate whereas Desktop or AI applications require at least 4GB. But make sure to check for standrds (LPDDR4X or LPDDR5 standards). DRAM of higher standards provide faster speeds and lower latency, which is necessary for applications that utilise memory heavily, such as video processing.
 
 
 
-Power Consumption: Though single-board computers are not very power-hungry devices, their usual consumption is somewhere between 3W and 15W. Some specialized boards like Nvidia Jetson AGX Orin can also consume power up to 100 watts! The importance of this information is to help you select a correct power supply unit for your board, in case your supplier doesn't provide you with one, which is quite a common case. Boards these days usually have USB-C PD for power supply to provide some ease to their consumers although some boards can also come with a dumb USB-C connector which accepts 5V/3A power, you can easily find a suitable adapter for them.
+### **3. Storage:**
+
+The storage is the you non-volatile memory which retains data even after the power supply is cut. SDCard, eMMC, SSD, and UFS are some good examples of storage devices. Typically, you might want larger storage options for your application, so it is generally a better idea to select a SBC which has larger storage inherently and even allows options to expand storage. Apart from storage size you also look for standards and their generations, While MicroSD cards are convenient for beginners, they are a major point of failure due to limited "Write Endurance".If your project logs a lot of data, prioritize boards with eMMC (embedded Multi-Media Card) or NVMe/SSD support. These are significantly faster and won't "wear out" and corrupt your OS as easily as an SD card. Most SBCs do so by providing a NVMe port or SATA port to connect with the external hard drives and pre-soldered eMMC.
 
 
 
-Expandability, Upgradability and available accessories: When you talk about upgradability and available accessories, you would want some external adapters or HATs to use some devices which are not supported in your favourable format but can be accessed natively in your processor. An example of this can be a PCIe or camera adapter. If your board provider designs HATs and other accessories, consider that a green flag!
+### **4. Networks:** 
+
+The number of networking options enables you not only to use the internet but also enables you to access your board from a distance without physically being near to it. A single board computer should ideally have Ethernet (1000 Mbps/1 Gbps/ 2.5 Gbps or greater), Wi-fi (5 or later), Bluetooth (5.0 and greater)
 
 
 
-Software support: Enough about hardware, let's not forget that software is also a necessary component of a single board computer to run your task efficiently, requiring less human touch and longer run. But what if you get stuck somewhere? Let's say the board is not booting or the image is not getting flashed properly. Who would you ask for help? That's where software support plays a vital role. A good hardware company also provides good software support. The more OS images your SBC is supported with, the merrier! Another sign is community. Sometimes when software support is busy somewhere, the community guys can run to your help. They may provide good guidance to you to resolve any issue. The other part is mainline linux support, you would never want to run your applications on ancient vendor kernels. Good hardware companies strive to provide best linux support for your board at any stage.
+### **5. Peripherals & Expandability**
+
+Hardware Interfaces enable your SBC to “talk” to the physical world.
+
+Low Speed I/O: On the low-speed I/O, common interfaces include I2C, UART, SPI, and GPIO for interfacing with sensors and modules.
+
+High-Speed I/O: Having a PCIe interface is a HUGE plus. This enables you to connect higher-speed NVMe storage solutions or even AI accelerators.
+
+Ecosystem. Verify that the manufacturer has support for HAT (Hardware Attached on Top) or shield adapters. This indicates that the community has a thriving market for add-ons, which is a good thing because you won't have to make your own custom boards.
+
+### **6. Power and Cooling Solutions**
+
+The power consumption for most SBCs is between 3W and 15W. However, many specialized boards such as Nvidia’s Jetson AGX Orin use up to 75W.
+
+Power Delivery: USB-C is the norm on most contemporary boards today. Just be sure to check the spec requirements, as some boards need specific Power Delivery protocols or the "Dumb" USB-C 5V/3A connection. Using a low-quality USB cable would bring down the voltage levels and cause the board to randomly reboot. Thermals: High-end CPUs might slow down because of excessive heat. Heatsinks or cooling fans will add to improvised heat dissipation and enable you SBC to carry out heavy task without nerfing down.
 
 
+### **7. Software Support: The Dealbreaker**
 
-Once you have compared all these specs stated above, you can create a small checklist of your own and easily come to a conclusion on how to select your next (or first!) SBC for your needs. 
+Hardware is only as good as the code running on it.
+
+Mainline Linux: This is important. You want a board supported by the latest Linux kernels, not a "frozen" version provided by a vendor that will never be updated.
+
+Community Support: A "cheap" board becomes very expensive if you have to invest 40 hours fixing a driver bug. A large community means someone else has already solved your problem.
+
+## **Final Conclusion**
+
+Before you select a SBC and try to balance your hardware specification with software longevity. Before purchasing, create a checklist: Does it have the right architecture? Is the storage reliable? Does the community exist? If the answer is "Yes" to all three, you've found your board.
