@@ -36,7 +36,7 @@ The storage is the your non-volatile memory which retains data even after the po
 
 ### **4. Networks:** 
 
-The number of networking options enables you not only to use the internet but also enables you to access your board from a distance without physically being near to it. A single board computer should ideally have Ethernet (1000 Mbps/1 Gbps/ 2.5 Gbps or greater), Wi-fi (5 or later), Bluetooth (5.0 and greater)
+The number of networking options enables you not only to use the internet but also enables you to access your board from a distance without physically being near to it. A single board computer should ideally have Gigabit Ethernet, Wi-fi (5+), Bluetooth (5.0 and greater).
 
 
 
@@ -46,9 +46,9 @@ Hardware Interfaces enable your SBC to “talk” to the physical world.
 
 Low Speed I/O: On the low-speed I/O, common interfaces include I2C, UART, SPI, and GPIO for interfacing with sensors and modules.
 
-High-Speed I/O: Having a PCIe interface is a HUGE plus. This enables you to connect higher-speed NVMe storage solutions or even AI accelerators.
+High-Speed I/O: Having a PCIe interface is a HUGE plus. This lets you connect external SSDs or AI accelerators.
 
-Ecosystem: Verify that the manufacturer has support for HAT (Hardware Attached on Top) or shield adapters. This indicates that the community has a thriving market for add-ons, which is a good thing because you won't have to make your own custom boards.
+Ecosystem: It is a good sign if your SBC manufacturer provides HATs (Hardware Attached on Top) or shields so you won't have to make your own custom boards for particular applications. Some companies can also design a custom HAT upon request for your specific needs making you avoid hassle to design on your own.
 
 ### **6. Power and Cooling Solutions**
 
@@ -57,9 +57,9 @@ The power consumption for most SBCs is between 3W and 15W. However, many special
 Power Delivery: USB-C is the norm on most contemporary boards today. Just be sure to check the spec requirements, as some boards need specific Power Delivery protocols or the "Dumb" USB-C 5V/3A connection. Using a low-quality USB cable would bring down the voltage levels and cause the board to randomly reboot. Thermals: High-end CPUs might slow down because of excessive heat. Heatsinks or cooling fans will add to improvised heat dissipation and enable you SBC to carry out heavy task without nerfing down.
 
 
-### **7. Software Support: The Dealbreaker**
+### **7. Software Support**
 
-Hardware is only as good as the code running on it.
+A SBC is only as good as the code running on it.
 
 Mainline Linux: This is important. You want a board supported by the latest Linux kernels, not a "frozen" version provided by a vendor that will never be updated.
 
@@ -67,4 +67,4 @@ Community Support: A "cheap" board becomes very expensive if you have to invest 
 
 ## **Final Conclusion**
 
-Before you select a SBC and try to balance your hardware specification with software longevity. Before purchasing, create a checklist: Does it have the right architecture? Is the storage reliable? Does the community exist? If the answer is "Yes" to all three, you've found your board.
+Before you select a SBC and try to balance your hardware specification with software longevity. It is a good idea to create a small checklist and confirm the following factors: Does it have the right CPU architecture? Is the storage reliable? Does the community exist? If the answer is "Yes" to all such ty[es of questions, then you have a green signal to buy that board.
